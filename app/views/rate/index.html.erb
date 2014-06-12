@@ -8,10 +8,23 @@
 <% end %>
   
 
-<ul>
-	<% @ratings.each do |rating| %>
-	<li>
-		<%= @ratings %>
-	</li>
-	<% end %>
-</ul>
+	
+<table>
+	<caption>table title and/or explanatory text</caption>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Rating</th>
+			<th>Review</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @ratings.each do |rating| %>
+			<tr>
+				<td><%= rating.title %></td>
+				<td><%= rating.rating %></td>
+				<td><%= rating.review %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
