@@ -6,25 +6,11 @@
 	Review: <%= f.text_area :review %><br>
 	<%= f.submit 'Share' %>
 <% end %>
-  
 
-	
-<table>
-	<caption>table title and/or explanatory text</caption>
-	<thead>
-		<tr>
-			<th>Title</th>
-			<th>Rating</th>
-			<th>Review</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% @ratings.each do |rating| %>
-			<tr>
-				<td><%= rating.title %></td>
-				<td><%= rating.rating %></td>
-				<td><%= rating.review %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<% @ratings.each do |rating| %>
+	<div class="review">
+		<h2><%= rating.title.capitalize %></h2>
+		<p>Rating: <%= rating.rating %></p>
+		<p><%= rating.review %></p>
+	</div>
+<% end %>
