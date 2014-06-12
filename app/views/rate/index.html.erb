@@ -1,5 +1,13 @@
 <h1>Restruaunt Ratings</h1>
 
+<%= form_for Ratings.new, url: '/rate' do |f| %>
+	Title: <%= f.text_field :title %>
+	Rating: <%= f.number_field :rating %><br>
+	Review: <%= f.text_area :review %><br>
+	<%= f.submit 'Share' %>
+<% end %>
+  
+
 <ul>
 	<% @ratings.each do |rating| %>
 	<li>

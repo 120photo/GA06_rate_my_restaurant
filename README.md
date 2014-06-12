@@ -3,6 +3,7 @@
 Small ruby app to allow customers to leave a rating for a restaurant.
 
 ## Requirements
-* MongoDB
+* MongoDB with Mongoid Gem
 * Rails 4.1.1
 * Ruby 2.1
+* rest-client
