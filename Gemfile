@@ -39,5 +39,3 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'debugger', group: [:development, :test]
 
 gem 'mongoid', "~> 4.0.0.rc1", github: 'mongoid/mongoid'
-
-gem 'rest-client'
